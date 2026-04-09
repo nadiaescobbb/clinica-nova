@@ -311,7 +311,7 @@ ul {
 
 .marquee-content {
     display: inline-block;
-    animation: scroll marquee 25s linear infinite;
+    animation: scroll 25s linear infinite;
     font-weight: 500;
     color: var(--text-muted);
     font-size: 0.95rem;
