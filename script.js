@@ -59,6 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden'; // lock scroll
             currentStep = 0;
+            
+            // Reset form state in case it was closed during rejection
+            const rejectStep = document.querySelector('.step-reject');
+            if(rejectStep) {
+                rejectStep.style.display = 'none';
+                rejectStep.classList.remove('active');
+            }
+            steps.forEach(s => s.style.display = ''); 
+            progressFill.style.backgroundColor = 'var(--accent-color)';
+            
             updateStepDisplay();
         });
     });
@@ -70,7 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(closeBtn) closeBtn.addEventListener('click', closeModal);
     if(modal) modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+    document.querySelectorAll('.modal-close-btn').forEach(btn => btn.addEventListener('click', closeModal));
 
+    // Valid path
     document.querySelectorAll('.form-btn.next-step').forEach(btn => {
         btn.addEventListener('click', () => {
             steps[currentStep].classList.remove('active');
@@ -78,6 +90,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if(currentStep < steps.length) {
                 updateStepDisplay();
             }
+        });
+    });
+
+    // Reject path (Low budget)
+    document.querySelectorAll('.form-btn.reject-step').forEach(btn => {
+        btn.addEventListener('click', () => {
+            steps[currentStep].classList.remove('active');
+            steps.forEach(s => s.style.display = 'none'); 
+            
+            const rejectStep = document.querySelector('.step-reject');
+            if(rejectStep) {
+                rejectStep.style.display = 'block';
+                setTimeout(() => rejectStep.classList.add('active'), 10);
+            }
+            
+            progressFill.style.width = '100%';
+            progressFill.style.backgroundColor = '#ccc';
+            if(eyebrowStep) eyebrowStep.innerText = 'Información Importante';
         });
     });
 
