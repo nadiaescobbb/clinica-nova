@@ -849,20 +849,14 @@ footer {
         border-radius: 50%;
     }
 
-    /* Scroll horizontal (Carrusel) para servicios y no cansar el dedo */
+    /* Cambio a diseño vertical (stack) para mejorar visibilidad y CRO en vez de usar carrusel oculto */
     .services-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        padding-bottom: var(--spacing-sm);
-        gap: 1rem;
-        -webkit-overflow-scrolling: touch;
-        /* Fluidez en iOS */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .service-card {
-        min-width: 85vw;
-        scroll-snap-align: center;
-        flex: 0 0 auto;
+        width: 100%;
     }
 }
