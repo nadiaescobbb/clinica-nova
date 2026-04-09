@@ -664,6 +664,8 @@ ul {
     position: relative; transform: translateY(20px) scale(0.95);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+    max-height: 90vh;
+    overflow-y: auto;
 }
 .modal-overlay.active .modal-content { transform: translateY(0) scale(1); }
 .modal-close {
