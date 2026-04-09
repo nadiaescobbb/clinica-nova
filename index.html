@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Nova Estética | Resultados naturales</title>
+    <meta name="description" content="Medicina estética facial para potenciar tu mejor versión, sin perder tu esencia. Tratamientos sutiles y armónicos.">
+    
+    <!-- Google Fonts Lite: Solo los pesos exactos usados (400 y 600) para ahorrar ~150KB -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- LCP Preload: Hack para que el héroe cargue antes que el CSS -->
+    <link rel="preload" as="image" href="assets/hero-bg.png">
+
+    <!-- Favicon Clínico -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- JS cargado en paralelo, ejecutado al final (modern approach) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/5491112345678?text=Hola%20Clínica%20Nova,%20vengo%20de%20la%20web%20y%20quiero%20asesorarme%20sobre%20tratamientos" class="floating-wa" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+        <span>Agendar Cita</span>
+    </a>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">NOVA<span>ESTÉTICA</span></div>
+            <nav class="nav-links">
+                <a href="#servicios">Tratamientos</a>
+                <a href="#nosotros">La Clínica</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero slide-up">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">CLÍNICA DE MEDICINA ESTÉTICA FACIAL</span>
+                    <h1>Recuperá la frescura de tu rostro <span class="highlight-text">sin perder tu identidad.</span></h1>
+                    <p>Logramos resultados hiper-naturales que se notan al instante, con intervenciones que nadie percibe. Tratamientos sutiles impulsados exclusivamente por médicos especialistas.</p>
+                    <a href="#" class="btn btn-primary open-modal-btn">
+                        Agendar Evaluación Ahora
+                    </a>
+                    <p class="urgency-text">🔒 Aplicación por cupos (Solo 20 lugares al mes)</p>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-image">
+                <!-- Fetchpriority indica al navegador máxima urgencia de red -->
+                <img src="assets/hero-bg.png" alt="Piel luminosa, estética natural" class="hero-bg" fetchpriority="high">
+                <div class="overlay-grad"></div>
+            </div>
+        </section>
+
+        <!-- Trust Badges (Faja de Autoridad Visual) -->
+        <div class="trust-badges slide-up">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>Aprobado por ANMAT</span>
+                    <span>ALLERGAN Aesthetics</span>
+                    <span>GALDERMA</span>
+                    <span>MERZ Aesthetics</span>
+                    <span>Aprobado por FDA</span>
+                    <!-- Duplicate for infinite scroll loop -->
+                    <span>Aprobado por ANMAT</span>
+                    <span>ALLERGAN Aesthetics</span>
+                    <span>GALDERMA</span>
+                    <span>MERZ Aesthetics</span>
+                    <span>Aprobado por FDA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem Section -->
+        <section class="problem-section slide-up">
+            <div class="container problem-grid">
+                <div class="problem-text">
+                    <h2>Tu rostro no es un lugar para improvisar.</h2>
+                    <p class="lead">Sabemos lo que te frena: el miedo a quedar artificial o a poner tu salud en las manos equivocadas. Merecés un trato 100% anatómico y médico.</p>
+                </div>
+                <div class="problem-image reveal-image">
+                    <img src="assets/details.png" alt="Insumos clínicos premium y toallas impecables" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Authority Section -->
+        <section id="nosotros" class="authority-section slide-up">
+            <div class="container authority-grid">
+                <div class="authority-image reveal-image">
+                    <img src="assets/doctor.png" alt="Doctora especialista en estética facial de Clínica Nova" loading="lazy">
+                </div>
+                <div class="authority-text">
+                    <span class="eyebrow">DIRECCIÓN MÉDICA</span>
+                    <h2>Excelencia médica aplicada a tu estética.</h2>
+                    <p class="matricula"><small><strong>M.N. 123456 | Recoleta, Buenos Aires. (Con parking privado)</strong></small></p>
+                    <p>Medicina generativa con resultados y evidencia. Basta de vender "paquetes mágicos"; hacemos medicina real.</p>
+                    <ul class="authority-list">
+                        <li><strong>Diagnóstico anatómico:</strong> Respetamos tu fisonomía y la salud real.</li>
+                        <li><strong>Marcas aprobadas:</strong> Cero genéricos. Todo rotulado por FDA o ANMAT.</li>
+                        <li><strong>Transparencia 100%:</strong> La caja se abre en tu cara, sin excepciones.</li>
+                    </ul>
+                    
+                    <div class="doctor-signature" style="margin-top: 2.5rem; border-left: 2px solid var(--accent-color); padding-left: 1rem;">
+                        <p style="font-family: var(--font-heading); font-style: italic; font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.4;">"Tu anatomía clínica es nuestra guía, jamás una moda pasajera."</p>
+                        <!-- Firma dibujada en SVG para un look de autor -->
+                        <svg viewBox="0 0 200 60" width="130" stroke="var(--text-main)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.8; margin-top: 0.5rem;">
+                            <path d="M10,40 Q30,10 50,30 T90,30 Q100,-10 110,40 Q130,20 150,30 T190,40" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Proof (Before/After) -->
+        <section class="visual-proof slide-up">
+            <div class="container proof-grid">
+                <div class="proof-text">
+                    <h2>Resultados empíricos.</h2>
+                    <p>No prometemos magia, demostramos regeneración celular. Mirá cómo la ciencia actúa directamente sobre el tejido cutáneo, borrando años sin que se note una intervención.</p>
+                </div>
+                <div class="proof-image reveal-image">
+                    <img src="assets/before-after.png" alt="Antes y después de textura facial" loading="lazy">
+                    <div class="proof-labels">
+                        <span class="label-before">Antes</span>
+                        <span class="label-after">Después</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="services-section slide-up">
+            <div class="container">
+                <div class="section-header text-center" style="margin-bottom: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">INVERSIÓN EN CALIDAD</span>
+                    <h2>Tratamientos de vanguardia,<br> decisiones seguras.</h2>
+                    <p style="font-size: 1.15rem; color: var(--text-main); font-weight: 500; max-width: 600px; margin: 1rem auto 0;">Nuestros planes de medicina estética inician en <strong>USD 250</strong>. Exclusividad sin genéricos.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card hover-lift">
+                        <div class="card-content">
+                            <h3>Armonización Facial</h3>
+                            <p>Más que rellenar, esculpimos. Equilibramos tus facciones con ácido hialurónico de primera línea mundial para lograr un perfil y un rostro estructurados y armónicos.</p>
+                            <span class="expectativa-badge">✓ Duración asegurada: 12 a 18 meses</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20asesorarme%20sobre%20Armonización%20Facial" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Consultar por Armonización</a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card hover-lift">
+                        <div class="card-content">
+                            <h3>Toxina Botulínica</h3>
+                            <p>Relajamos las líneas de expresión para una mirada descansada y piel lisa. Vas a seguir siendo vos, pero con la vitalidad y frescura de haber dormido 10 horas.</p>
+                            <span class="expectativa-badge">✓ Efecto pico: 4 a 6 meses</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20asesorarme%20sobre%20Botox" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Consultar por Botox</a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card hover-lift">
+                        <div class="card-content">
+                            <h3>Bioestimuladores</h3>
+                            <p>Invertí hoy en el futuro de tu piel (Radiesse/Sculptra). Estimulamos en forma natural tu colágeno para retroceder la flacidez y lograr firmeza real sin volumen temporal.</p>
+                            <span class="expectativa-badge">✓ Resultados hasta por 24 meses</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20asesorarme%20sobre%20Bioestimuladores" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Consultar por Bioestimulación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="testimonial-section slide-up">
+            <div class="container text-center">
+                <h2>Más de 400 pacientes confían en nuestra química médica</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card google-review">
+                        <div class="reviewer-meta">
+                            <div class="avatar">S</div>
+                            <div class="reviewer-info">
+                                <span class="author">Sofía M.</span>
+                                <div class="stars">★★★★★ <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" width="14" class="g-logo"></div>
+                            </div>
+                        </div>
+                        <p>“Tenía terror de hacerme los labios y quedar con boca de pato... La doctora me explicó cada milímetro con una paciencia increíble. Quedaron súper sutiles y casi ni sentí molestia. La súper recomiendo.”</p>
+                    </div>
+                    <div class="testimonial-card google-review">
+                        <div class="reviewer-meta">
+                            <div class="avatar">V</div>
+                            <div class="reviewer-info">
+                                <span class="author">Valeria C.</span>
+                                <div class="stars">★★★★★ <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" width="14" class="g-logo"></div>
+                            </div>
+                        </div>
+                        <p>“Me atiendo acá hace dos años. Lo que más destaco, más allá de la piel divina, es que abren los productos internacionales adelante tuyo. Te da una tranquilidad tremenda saber qué te están inyectando.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section slide-up">
+            <div class="container faq-container">
+                <div class="section-header text-center">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Resolvé tus dudas antes de la cita diagnóstica.</p>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">¿Duele el procedimiento? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="answer-inner">
+                                <p>Trabajamos con agujas ultrafinas, técnicas avanzadas y opciones de confort como frío o anestesia tópica de alta gama. Para el 95% de nuestras pacientes, es solo una pequeña molestia temporal muy tolerada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">¿Y si el resultado queda exagerado? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="answer-inner">
+                                <p>Nuestro lema médico es 'Menos es más'. Siempre empezamos de a poco, construyendo tu resultado. Preferimos que vuelvas a los 15 días a un pequeño retoque, antes que sobre-corregir un rasgo desde el inicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">¿Qué marcas de productos usan? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="answer-inner">
+                                <p>Solo trabajamos con los laboratorios líderes del mercado mundial (como Allergan, Galderma, Merz). La seguridad de tu cuerpo no es negociable, por eso siempre mostramos la caja de los insumos cerrados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Price FAQ -->
+                    <div class="faq-item">
+                        <button class="faq-question">¿Tienen un listado de precios? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="answer-inner">
+                                <p>En estética de precisión, cada rostro requiere dosis distintas. Los procedimientos de vanguardia **inician en USD 250**. Para tu caso exacto, realizamos un formulario de triaje online para pre-calificar. Si tu caso es apto a nuestra filosofía, la médica realiza una consulta diagnóstica presencial profunda (arancelada) para determinar la anatomía.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta slide-up">
+            <div class="container text-center">
+                <h2>Es momento de priorizarte.</h2>
+                <p>Da el primer paso hacia una versión tuya más luminosa, fresca y segura.</p>
+                <a href="#" class="btn btn-primary btn-large">
+                    Agendar mi cita por WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">NOVA<span>ESTÉTICA</span></div>
+            <p>© 2026 Clínica Nova Estética. Todos los derechos reservados. Diseño y Desarrollo por Nadia Web.</p>
+        </div>
+    </footer>
+
+    <!-- Typeform Ficticio (Modal Embebido) -->
+    <div id="modal-triaje" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <span class="eyebrow" id="modal-eyebrow">Paso 1 de 3</span>
+                <div class="progress-bar"><div class="progress-fill" style="width: 33%"></div></div>
+            </div>
+            
+            <div class="modal-body step-1 active">
+                <h3>¿Qué área de tu rostro querés potenciar?</h3>
+                <div class="form-options">
+                    <button class="form-btn next-step" type="button">Armonización General</button>
+                    <button class="form-btn next-step" type="button">Arrugas / Líneas Finas</button>
+                    <button class="form-btn next-step" type="button">Flacidez / Calidad de piel</button>
+                </div>
+            </div>
+            
+            <div class="modal-body step-2">
+                <h3>Nuestros planes de vanguardia inician en USD 250. ¿Es viable para tu presupuesto?</h3>
+                <div class="form-options">
+                    <button class="form-btn next-step" type="button">Sí, es viable</button>
+                    <button class="form-btn next-step" type="button">Priorizo alternativas económicas</button>
+                </div>
+            </div>
+            
+            <div class="modal-body step-3">
+                <h3>Pre-calificación Aprobada. Reservá tu lugar exclusivo:</h3>
+                <div class="form-options">
+                    <a href="https://wa.me/5491112345678?text=Hola,%20completé%20el%20triaje%20online%20(Acreditado)" target="_blank" class="btn btn-primary" style="width: 100%;">Conectar con Recepción de Clínica</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="#" class="btn btn-primary open-modal-btn" style="width: 100%; border-radius: 8px; padding: 14px;">📆 Agendar Evaluación Ahora</a>
+    </div>
+
+</body>
+</html>
