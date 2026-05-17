@@ -1,75 +1,65 @@
-<!-- Header Section -->
-<div align="center">
-  <img src="assets/favicon.png" alt="Logo Clínica Nova" width="80" height="80"/>
-  <h1>✨ Clínica Nova Estética ✨</h1>
-  <p><strong>Landing Page de Alta Conversión (High-Ticket)</strong></p>
+# Clínica Nova Estética
 
-  <!-- Badges -->
-  <img src="https://img.shields.io/badge/Versi%C3%B3n-1.0.0-gold?style=for-the-badge" alt="Version"/>
-  <img src="https://img.shields.io/badge/UI%2FUX-Premium-black?style=for-the-badge" alt="UI/UX"/>
-  <img src="https://img.shields.io/badge/Desarrollo-Nadia_Web-7d5a50?style=for-the-badge" alt="Dev"/>
-</div>
+Landing page para una clínica estética orientada a consultas de alto valor, con foco en claridad, confianza visual y contacto directo por WhatsApp.
+
+El proyecto combina una estructura comercial simple con un flujo de calificación inicial para que la clínica pueda recibir consultas más alineadas a sus servicios.
 
 ---
 
-> **Atención**: Este repositorio contiene **código propietario**. Es un desarrollo exclusivo creado bajo la firma de **Nadia Web**. 🛑 *Prohibida su copia, distribución o uso sin autorización.*
+## Contexto
+
+La página fue pensada para un servicio donde la confianza pesa más que la decoración. El recorrido prioriza tres cosas: explicar la propuesta, reducir dudas frecuentes y llevar a una consulta directa sin formularios extensos.
 
 ---
 
-## 🎯 Visión General
+## Mi rol
 
-Una *landing page* meticulosamente diseñada para la conversión de servicios médicos y estéticos **High-Ticket**. Pensada estratégicamente para:
-1. Posicionar la marca médica desde la autoridad y la confianza visual.
-2. Filtrar automáticamente a consultantes con presupuesto incompatible.
-3. Acelerar el cierre de ventas derivando prospectos altamente calificados por WhatsApp.
+Diseño UI, desarrollo frontend, estructura del embudo, copy de conversión, responsive design y lógica del flujo de consulta.
 
 ---
 
-## 💎 Características Premium
+## Decisiones de producto y UX
 
-| Componente | Detalles Técnicos | Beneficio de Negocio |
-| :--- | :--- | :--- |
-| **🛡️ Triage Dinámico** | Modal multipaso JS con *routing* condicional. | Descalifica prospectos *low-cost* y protege el tiempo de la clínica. |
-| **⚡ Ultra Performance** | Vanilla Stack (`HTML` + `CSS` + `JS`). Sin librerías. | Carga instantánea; vital para SEO y disminuir la tasa de rebote. |
-| **✨ Flujo Mobile-First** | *Grid* CSS nativo y *Scroll* vertical mejorado. | Navegación ergonómica y natural desde smartphones. |
-| **🔒 Seguridad UX** | Directivas `rel="noopener noreferrer"`. | Prevención absoluta contra hipervínculos cruzados (*tabnabbing*). |
-
----
-
-## 🛠️ Stack Tecnológico
-
-Desarrollo desacoplado e independiente (Zero-bloat stack) enfocado en la estabilidad a largo plazo:
-
-- <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/> Máxima semántica para SEO on-page.
-- <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/> Variables nativas, animaciones y Media Queries sin compiladores.
-- <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/> Manipulación limpia del DOM e IntersectionObservers.
+- Modal multipaso para ordenar la consulta antes de derivarla.
+- CTAs conectados a WhatsApp para reducir fricción en mobile.
+- Estructura single-page para que el usuario pueda evaluar rápido la propuesta.
+- Jerarquía visual sobria para sostener percepción médica y estética.
+- Microinteracciones CSS sin depender de librerías externas.
 
 ---
 
-## 📁 Arquitectura del Código
+## Stack
+
+- HTML5 semántico
+- CSS3
+- JavaScript vanilla
+- Responsive design
+- Integración directa con WhatsApp
+
+---
+
+## Estructura
 
 ```text
-📁 Proyecto Clínica
-├── 🖼️ assets/        # Media, fondos optimizados e iconografía SVG.
-├── 📄 index.html     # Vistas (Single-Page) y estructura base.
-├── 🎨 styles.css     # Design Tokens, utilidades y hojas de estilo base.
-├── ⚙️ script.js      # Lógica de estados del embudo e interacciones.
-└── 📃 README.md      # Esta documentación.
+clinica-nova/
+├── assets/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 ```
 
 ---
 
-## ⚖️ Licencia y Términos de Uso
+## Qué muestra este proyecto
 
-**Copyright © 2026 Nadia Web - Todos los derechos reservados.**
-
-Este código fuente es tratado como **propietario (Closed-Source)**.  
-PERTENECE ESTRICTAMENTE AL PORTAFOLIO Y DESARROLLOS PRIVADOS DE **NADIA WEB**.
-
-No se otorga ninguna licencia pública de código abierto (MIT, GPL, Apache, etc.). Queda terminantemente prohibida su clonación, reproducción, ingeniería inversa, alteración, distribución o uso para fines comerciales o de terceros sin el consentimiento previo, explícito y por escrito de la desarrolladora.
+- Capacidad para traducir un servicio comercial en una interfaz clara.
+- Criterio para diseñar flujos de consulta y no solo pantallas estáticas.
+- Uso de JavaScript simple para manejar estados del embudo.
+- Atención a detalles básicos de seguridad en enlaces externos (`rel="noopener noreferrer"`).
 
 ---
-<div align="center">
-  <i>Arquitectura, Diseño y Desarrollo liderado por <strong>Nadia Web</strong>.</i><br>
-  Construyendo presencias digitales para marcas que no negocian la calidad.
-</div>
+
+## Licencia
+
+© 2026 Nadia Web. Portfolio use only. All rights reserved.
